@@ -22,9 +22,15 @@ exports.max = function max (array) {
 
 exports.avg = function avg (array) {
     let total =0;
+    let totalMin =0;
     for(var i = 0; i < array.length; i++) {
-        total += array[i];
+        if (array[i] = -array[i] ) {
+        totalMin += array[i];
+        } else {
+            total += array[i];
+        }
     }
-    let avgNum = total / grades.length;
-    return avgNum;
+    return total-totalMin / array.length;
+
 }
+
